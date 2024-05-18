@@ -1,0 +1,107 @@
+body{
+    font-family: "Inter", sans-serif;
+    min-height: 100vh;
+}
+
+.img{
+    background-image: url(images/pattern-bg.svg);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.img img{
+    height: 400px;
+    width: 400px;
+}
+
+.carousel-item{
+    margin-top: 5rem;
+}
+
+.lead{
+    z-index: 1;
+    margin-left: 4rem;
+    font-size: 1.45rem;
+    background-image: url(images/pattern-quotes.svg);
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+span{
+    text-wrap: nowrap;
+}
+
+.persona{
+    display: flex;
+    gap: 0.5rem;
+    margin-left: 4rem;
+}
+
+.testimonial{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+@media (min-width:360px){
+    .row{
+        display: flex;
+        flex-flow: column-reverse nowrap;
+    }
+
+    .lead,
+    .img{
+        background-image: none;
+    }
+
+    .img{
+        text-align: center;
+    }
+
+    .testimonial{
+        margin-top: 3rem;
+    }
+
+    .lead,.persona{
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .lead{
+        font-size: 1.2rem;
+    }
+
+    .persona{
+        display: block;
+    }
+}
+
+@media (min-width:762px){
+    .row{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .lead{
+        font-size: 1.25rem;
+        text-align: left;
+    }
+
+    .testimonial{
+        margin-top: 0;
+    }
+}
+
+@media (min-width:992px){
+    .lead{
+        font-size: 1.5rem;
+        margin-left: 4rem;
+    }
+
+    .persona{
+        display: flex;
+        flex-flow: row nowrap;
+        margin-left: 4rem;
+    }
+}
